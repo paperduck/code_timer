@@ -1,7 +1,7 @@
 import datetime
 import timeit
 
-class Timer():
+class CodeTimer():
 
     @classmethod
     def start(cls):

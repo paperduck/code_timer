@@ -11,11 +11,11 @@ It is a wrapper around the standard Python `timeit` module.
 Sample usage:
 
 ```python
-from timer import Timer
+from code_timer import CodeTimer
 
-start = Timer.start()
+start = CodeTimer.start()
 # Your code goes here.
-duration = Timer.stop(start)
+duration = CodeTimer.stop(start)
 print('Your code took {} seconds to run.'.format(duration))
 ```
 
