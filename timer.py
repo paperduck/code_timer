@@ -16,4 +16,7 @@ class Timer():
         Parameters:
             start: float - return value of start()
         """
-        return timeit.default_timer() - start
+        duration = timeit.default_timer() - start
+        if duration < 0:
+            duration += 60*60*24
+        return duration
