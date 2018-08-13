@@ -2,9 +2,9 @@
 
 ### Overview
 
-This is a simple one-off utility for timing how long code takes to run.
+This is a simple utility for timing how long code takes to run.
 
-It is a wrapper around the standard Python `timeit` module.
+It uses the standard Python module `timeit`.
 
 ### How to Use
 
