@@ -3,20 +3,20 @@ import timeit
 
 class CodeTimer():
 
+    start = None
+
     @classmethod
     def start(cls):
-        """ Returns the wall clock time, in seconds """
-        return timeit.default_timer()
+        """ Record the wall clock time, in seconds """
+        cls.start = timeit.default_timer()
 
 
     @classmethod
-    def stop(cls, start):
-        """ Returns the duration of time passed, in seconds.
-        
-        Parameters:
-            start: float - return value of start()
-        """
-        duration = timeit.default_timer() - start
+    def stop(cls):
+        """ Returns the duration of time passed, in seconds."""
+        if not cls.start:
+            raise Exception
+        duration = timeit.default_timer() - cls.start
         if duration < 0:
             duration += 60*60*24
         return duration

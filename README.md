@@ -13,16 +13,16 @@ Sample usage:
 ```python
 from code_timer import CodeTimer
 
-start = CodeTimer.start()
+CodeTimer.start()
 # Your code goes here.
-duration = CodeTimer.stop(start)
+duration = CodeTimer.stop()
 print('Your code took {} seconds to run.'.format(duration))
 ```
 
 Sample output:
 
 ```text
-Your code took 0.54593290000048 seconds to run.
+Your code took 0.00593290000048 seconds to run.
 ```
 
 
